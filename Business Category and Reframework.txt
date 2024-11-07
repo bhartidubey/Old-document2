@@ -1,0 +1,48 @@
+Categories of Business Processes
+Considering the steps of a business process and how they are repeated, we can divide business processes into three categories:
+
+Linear - The steps of the process are performed only once.
+
+Iterative - The steps of the process are performed multiple times, but each time different data items are used.
+
+Transacrtional - Similarly to iterative processes, the steps of transactional processes repeat multiple times over different data items.
+
+
+REFramework - Robotics Enterprise Framework
+
+The REFramework is implemented as a state machine, which is a type of workflow that has two very useful features:
+
+States that define actions to be taken according to the specified input
+Transitions that move the execution between states depending on the outcomes of the states themselves.
+
+REFramework has 4 main states that are usually common to business processes:
+
+1.Initial State
+
+This is where the process starts. It's an operation where the process initializes the settings and performs application checks in order to make sure all the prerequisites for the starting the process are in place.
+
+2.Get Transaction Data State
+
+Gets the next transaction item. This can be a queue item or any item of a collection. 
+
+By default, transaction items are queue items, but this can be easily changed to suit your needs. This is also the state in which the Developer should set up the condition to exit this state when there are no items to process.
+
+3.Process Transaction State
+
+Performs actions/applies logic in various applications for the transaction item obtained at the previous step. Once a transaction item is processed, the process continues with the next available transaction item.
+
+4.End Process State
+
+The process ends (and the applications opened during the automation should be gracefully closed).
+
+Global Variable of REFramework
+
+Transaction data = datatable
+Transaction item = row
+transaction number = index
+Transaction field1= logging
+transaction field2= logging
+Retrynumber= 3
+config = dictionary
+Systemexception 
+businessexception

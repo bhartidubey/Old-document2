@@ -1,0 +1,39 @@
+
+Time Estimation for F-017 P&L Reporting process
+
+Below Time Estimation included Devlopment and Basic Testing.
+
+
+CR1- Daily Task Changes - Split Population check into task completed and file saved - total 7 days
+
+Block 4
+Block 5
+Block 6
+Block 7
+Block 8
+Block 10
+Block 11
+Block 12
+Block 14
+
+CR2- FOBO RECS - Split Population check into task completed and file saved/ Create a daily folder named ‘Daily Recs Email’
+Save down all daily Emails sent into the above folder and tick file saved on checklist - total 3.5 days
+
+Block 3 
+Block 11
+Block 12
+Block 14
+
+CR3- Trader Sign Offs - Split Population check into task completed and file saved/ Save final email sent to the traders - total 4 days
+
+Block 2 part 1
+Block 2 part 2
+Block 11
+Block 12
+Block 13
+Block 14
+
+CR4- Create new Block - Add a new table to the sox checklist named ‘Onshore approval - 5 days
+
+CR5- Add a count of rejected P&L handovers named ‘Onshore approval count of rejected handovers - 4 hrs 
+

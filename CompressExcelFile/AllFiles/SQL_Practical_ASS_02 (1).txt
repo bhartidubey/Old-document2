@@ -1,0 +1,124 @@
+create database emplyee_mgmt;
+
+create schema name master;
+
+create all theses tables inside master schema.
+
+CREATE TABLE employee (
+	id int4 NOT NULL,
+	first_name varchar(255) NOT NULL,
+	last_name varchar(255) NOT NULL,
+	manager_id int4 NULL,
+	dep_id int4 NULL,
+	role_id int4 NULL,
+	email varchar(200) NULL,
+	CONSTRAINT pk_employee_employee_id PRIMARY KEY (id),
+	CONSTRAINT uk_employee_email UNIQUE (email),
+	CONSTRAINT fk_employee_manager_id FOREIGN KEY (manager_id) REFERENCES employee(id),
+	CONSTRAINT fk_employee_role_id FOREIGN KEY (role_id) REFERENCES role(id),
+	CONSTRAINT fk_employee_dep_id FOREIGN KEY (dep_id) REFERENCES department(id)
+);
+
+
+create table department(
+  id int,
+  name varchar(200),
+  location varchar(200),
+  constraint pk_department_id primary key (id)
+);
+
+
+create table role (
+  id int, 
+  name varchar(250),
+  description varchar(250),
+  constraint pk_role_id primary key (id) 
+);
+
+
+INSERT INTO udaan_batch_2."role"
+(id, "name", description)
+VALUES(1, 'Super Admin', 'This role is for super admin'),
+(2,'Manager','This role is for manager'),
+(3,'Generic User','This role is for generic users');
+
+INSERT INTO udaan_batch_2.department
+(id, "name", "location")
+values
+--(1, 'DSG', 'Bhopal'),
+--(2,'NDS','Delhi'),
+--(3,'ORION','Indore'),
+--(4,'IT','Bhopal'),
+--(5,'HR','Mandideep'),
+(6,'Technaican','Bhopal'),
+(7,'Help Desk','Bhopal');
+
+INSERT INTO udaan_batch_2.employee
+(id, first_name, last_name, manager_id, dep_id, role_id, email)
+values
+--(1, 'Adarsh', 'Jaish', null, 2, 1, 'ajaish@netlink.com'),
+--(2, 'Brajsh', 'Maurya', 1, 2, 2, 'bmaurya@netlink.com'),
+--(3, 'Neeha', 'Kaurav', 1, 2, 2, 'nkaurav@netlink.com'),
+--(4, 'Akshay', 'Sethiya', 2, 2, 3, 'asethiya@netlink.com'),
+--(5, 'Geeta', 'Negi', 2, 2, 3, 'gengi@netlink.com'),
+--(6, 'Bikram', 'KC', 3, 2, 3, 'bikramKC@netlink.com'),
+--(7, 'Shiavm', 'Tiwari', null, 1, 1, 'tani@netlink.com'),
+--(8, 'Sandeep', 'Makh', null, 1, 1, 'sandeep@netlink.com'),
+--(9,'Anand','Patel',8,1,2,'anand@netlink.com'),
+--(10,'Saif','Ali',8,5,1,'saif@netlink.com'),
+--(11,'Leonard','Jesuraj',10,5,2,'leo@netlink.com'),
+--(12,'Priyanshi','Gurwani',11,5,3,'priynashi@netlink.com'),
+--(13,'Monika','Sangwani',11,5,3,'monika@netlink.com'),
+--(14,'Basant','K.C',null,4,1,'basant@netlink.com'),
+--(15,'Shivam','Tiwari',14,6,3,'shivam@netlink.com'),
+--(16,'Amit','Kushwaha',14,6,3,'amit@netlink.com'),
+--(17,'Deepak','Soni',14,7,3,'deepak@netlink.com'),
+(18,'Deepak','Soni',14,6,3,'deepak@nelink.com');
+
+
+select * from employee e;
+
+1. write a query and print employee name,department name those are associate with Technican role;
+
+2. write a query and print all employee those are reporting to 'Adarsh';
+
+3. write a query and find that department in which no employee is working;
+
+4, write a query and print employee name and email those are having role 'Super Admin' as well as print department name;
+
+5. write a query to add column name -- salary on employee table.
+
+6. write a query to update salary of employee which is from 'DSG' department 50000,
+and 'NDS' department 30000, 'HR' department 20000, 'IT'department 25000, 'Technician'and 'Help Desk' department 27000;
+
+7. Find the departments where the total number of employees is less than the total number of employees in Delhi.
+
+8.write a query to final all employee with there manager name;
+
+9.write a query to create index for email column.
+
+10.create a view name emp_view as well as create materialized view name emp_mv;
+
+11. create a function which will help you to update employee email by employee id;
+
+12. create trigger which will maintaine all email chnages logs.
+
+13. print the names and email of each employee who works in both the 'Help Desk' department and the 'Technician'department.
+
+14. create student table and all constraint on it. (name, email,age,status,dateOfBirth)
+
+15. Display employees whose last names contain “s” as the second letter, displaying all the columns of the employees table just as they are. Use the LIKE keyword.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

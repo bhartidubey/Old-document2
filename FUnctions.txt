@@ -1,0 +1,39 @@
+Variable.split({“,”},StringSplitOptions.None).tolist
+variable.ToString.Substring(3,variable.ToString.Length-3)
+Variable.Remove(Variable.Length - 1)
+
+stringVar = “The quick brown fox jumps over the lazy dog”
+Variable.Contains(“fox”)
+stringVar.StartsWith(“T”)
+stringVar.EndsWith(“g”)
+
+FORMAT
+String.Format(“My name is {0} and I am {1} years old.”,”John”,”21?) = My name is John and I am 21 years old.
+String.Format(“Today is {0}.”,”Monday”) = 	Today is Monday.
+
+REPLACE
+stringVar = “apple, orange, mango”
+stringVar.Replace(“,”,”;”) = apple; orange; mango
+stringVar.Replace(“a”,”i”)=	ipple, oringe, mingo
+stringVar.Replace(“a”,”ASD”)	ASDpple, orASDnge, mASDngo
+
+SPLIT
+stringVar = “apple, orange, mango”
+stringVar.Split(“,”)=	{“apple”,”orange”,”mango”}
+
+DateTime.Now.ToString("ddMMyyyy") = 15042020
+DateTime.Now.ToString("dd-MM-yyyy")  =15-04-2020
+DateTime.Now.ToString("dd")  = 15
+DateTime.Now.ToString("MMM") = APR
+DateTime.Now.ToString("yyyy") = 20202
+DateTime.Now.Adddays(-1).ToString("ddMMyyyy")  = 14042020
+DateTime.Now.Adddays(1).ToString("ddMMyyyy")   = 16042020
+DateTime.Now.Adddays(-1).ToString("ddMMMyyyy")   = 14apr2020
+DateTime.Now.AddMonths(-1).ToString("ddMMyyyy")   =15032020
+DateTime.Now.AddMonths(1).ToString("ddMMyyyy")    =15052020
+DateTime.Now.AddYears(-1).ToString("yyyy")       =2019
+DateTime.Now.Adddays(-1).Adddays(-1).ToString("ddmmyyyy") = 14032020
+DateTime.Now.Adddays(-1).Adddays(-1).AddYears(-1).ToString("ddmmyyyy")  = 14032019
+now.AddDays(Convert.ToDouble(Config("NoOfDays").ToString)).ToString("MMddyy")
+
+

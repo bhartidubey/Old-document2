@@ -1,0 +1,77 @@
+Malwarebytes
+www.malwarebytes.com
+
+-Log Details-
+Scan Date: 3/19/20
+Scan Time: 5:10 PM
+Log File: 6fa6090a-69d6-11ea-b8b6-8c04ba296b84.json
+
+-Software Information-
+Version: 4.1.0.56
+Components Version: 1.0.854
+Update Package Version: 1.0.21006
+License: Premium
+
+-System Information-
+OS: Windows 10 (Build 17763.1098)
+CPU: x64
+File System: NTFS
+User: BPLNETLINK\BDubey
+
+-Scan Summary-
+Scan Type: Threat Scan
+Scan Initiated By: Manual
+Result: Completed
+Objects Scanned: 387978
+Threats Detected: 6
+Threats Quarantined: 0
+Time Elapsed: 2 min, 57 sec
+
+-Scan Options-
+Memory: Enabled
+Startup: Enabled
+Filesystem: Enabled
+Archives: Enabled
+Rootkits: Disabled
+Heuristics: Enabled
+PUP: Detect
+PUM: Detect
+
+-Scan Details-
+Process: 0
+(No malicious items detected)
+
+Module: 0
+(No malicious items detected)
+
+Registry Key: 0
+(No malicious items detected)
+
+Registry Value: 0
+(No malicious items detected)
+
+Registry Data: 6
+PUM.Optional.NoChangingWallpaper, HKU\S-1-5-21-889872433-2865179470-1662432701-9048\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\POLICIES\ACTIVEDESKTOP|NOCHANGINGWALLPAPER, No Action By User, 13567, 293332, 1.0.21006, , ame, 
+PUM.Optional.NoDispScrSavPage, HKU\S-1-5-21-889872433-2865179470-1662432701-9048\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\POLICIES\SYSTEM|NODISPSCRSAVPAGE, No Action By User, 13586, 293338, 1.0.21006, , ame, 
+PUM.Optional.HomepageControl, HKU\S-1-5-21-889872433-2865179470-1662432701-9048\SOFTWARE\POLICIES\MICROSOFT\INTERNET EXPLORER\CONTROL PANEL|HOMEPAGE, No Action By User, 13588, 293330, 1.0.21006, , ame, 
+PUM.Optional.NoChangingWallpaper, HKU\S-1-5-21-889872433-2865179470-1662432701-2578\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\POLICIES\ACTIVEDESKTOP|NOCHANGINGWALLPAPER, No Action By User, 13567, 293332, 1.0.21006, , ame, 
+PUM.Optional.NoDispScrSavPage, HKU\S-1-5-21-889872433-2865179470-1662432701-2578\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\POLICIES\SYSTEM|NODISPSCRSAVPAGE, No Action By User, 13586, 293338, 1.0.21006, , ame, 
+PUM.Optional.HomepageControl, HKU\S-1-5-21-889872433-2865179470-1662432701-2578\SOFTWARE\POLICIES\MICROSOFT\INTERNET EXPLORER\CONTROL PANEL|HOMEPAGE, No Action By User, 13588, 293330, 1.0.21006, , ame, 
+
+Data Stream: 0
+(No malicious items detected)
+
+Folder: 0
+(No malicious items detected)
+
+File: 0
+(No malicious items detected)
+
+Physical Sector: 0
+(No malicious items detected)
+
+WMI: 0
+(No malicious items detected)
+
+
+(end)

@@ -1,0 +1,118 @@
+In UiPath studio, how elements are recognized on screen?
+They can be recognized through the attributes of UI elements.
+
+What does the Accuracy property represent in the Click image activity?
+It is a unit of measurement from O to 1 which expresses the minimum similarity between the image you are searching for and the one to be found.
+
+How can you get a value from an application, if it changes for each transaction?
+This could be done by finding a static element and then use Scrape Relative functionality to extract the value.
+
+Mention the usage of PGP
+PGP is used to DECRYPT and ENCRYPT the file by assigning the PASSPHRASE.
+
+If we scrape some text and we know it contains only digits, how can we make the scrape better?
+By using Google OCR with “Numbers Option” only.
+
+What is a single block activity in UiPath?
+Single Block Activity is the smallest type of project which is mainly called as Sequence. They are suitable for linear processes as they enable you to go from one activity to another seamlessly, and act as a single block activity. They can be reused time and again, as a standalone automation or as part of a state machine or flowchart.
+
+ What do you understand by Selectors and Wildcards in UiPath?
+Similar to that in SQL, wildcards are symbols which enable you to replace 0/ more characters in a string. They are mostly used while dynamically changing attributes in a selector.
+
+The following wildcards are used:
+
+Asterisk (*) – replaces zero or more characters
+Question mark (?) – replaces a single character
+Selectors are used to store the attributes of a GUI element and its parents, in the shape of an XML fragment.
+
+What is System Administrator in UiPath Orchestrator?
+The default host admin which is created while installing UiPath Orchestrator is the System Administrator. The host admin or most commonly known as the system administrator has the right to create new tenants, audit password change, create, update, delete actions on settings, and change application settings. The profile page enables the host admins to change their information and password along with viewing the last login attempts. Not only this, but the admin can enable or disable a tenant at any point.
+
+How do you activate UiPath Studio license?
+
+How to import Namespaces in UiPath?
+To add new namespaces to your library:
+
+Open the Imports
+In the Enter or Select namespace field, start typing the namespace that interest you. Note that suggestions are provided while you type in case you are not exactly sure what you are looking for.
+Click the drop-down arrow to view and browse all available namespaces.
+Select the desired namespace. The namespace is added to the Imported Namespaces. To remove a namespace, select it and press Delete. Note that namespaces can only be deleted if they aren’t used. For example, you can delete a namespace if the assembly that contains it is no longer referenced by the project.
+
+What are the steps to get the desired package in UiPath studio if it is not available in the Package Manager?
+The steps you must follow are as follows:
+
+Go to this proxy site to get the packages. This will list all the packages with their URLs and latest versions.
+Next, go to the URL followed by the package name and download it to local drive.
+Then open UiPath package Manager and right-click on any of the nodes like Installed->All.. , Available-> All..
+Configure Sources will pop up, point that to the directory where package is downloaded in the local. This will display all the downloaded packages on the UiPath package manager.
+
+hat are the differences between Basic and Desktop recording?
+Basic Recording	Desktop Recording
+Generates a full selector for each and every activity	Generates partial selector on each activity
+Comparatively slower than Desktop recorder	Quick than Basic recorder
+Does not generate container for each activity	Generates container for each activity
+Suitable for a single activity	Suitable for multiple activities
+
+What is tracing and how do you enable tracing in UiPath?
+By default, UiPath generates log files that track the activity of Studio and the Robots. These logs can be accessed from the Execute ribbon tab, by clicking the Open Logs button.
+For complex issues, more details about your automation are needed. To gather them, tracing must be enabled.
+In UiPath Studio, tracing generates a .etl file. It contains binary log data at the trace level, such as disk accesses or page faults, and is used to log high-frequency events while tracking the performance of an operating system.
+
+Can UiPath run multiple instances of the same process with one robot in one system simultaneously?
+Yes, it can run the same program simultaneously in two robots where each system is registered as one robot. On a machine with a Windows Server (2008 R2 or 2012 R2 or 2016) operating system:
+
+You can run the same process with all Robots at the same time;
+You can run different processes with all Robots at the same time.
+These are called High-density robots.
+
+How do you expand a Tree View structure in a web page using UiPath?
+If you are talking about expanding the root node for a collapsed tree, you probably would use Click Image since that would likely be unique. If you are trying to expand a particular node, you’d likely use Click Text, and give it a certain negative X offset in the Position property so that when it targets the text you want to expand the node for, it will end up clicking on the +.
+
+Consider a scenario where you have developed automation using the UiPath Community Edition. Now, let us say you want to move the deployed bots to the client environment. How will you achieve this?
+
+How can you make the UiPath Robot as a REST endpoint, to start and manage the process?
+Since the Robot API provided earlier by UiPath has been depreciated, you can now use UiPath Orchestrator services to use robots in web services.
+
+What is the primary difference between test automation and process automation?
+
+Test Automation is used for testing purposes while automating any application to check whether the cases are pass or fail. On the other hand, process automation used to automate the process without any human intervention.
+
+What is the difference between UiPath and Automation Anywhere?
+
+The difference between UiPath and Automation anywhere is:
+
+UiPath	Automation anywhere
+It follows the web-based architecture	The architecture includes client and server
+Supports browser and mobile app.	Supports access through the app only.
+Scalability recommended for small projects only.	Highly scalable for small and mediums projects.
+
+What is a thin client?
+
+Thin client is an application that requires certain attributes while using RPA tools, e.g., calculator, computer, etc.
+
+List types of OCR engine available in the market
+
+Types of OCR engines are: 1)Google cloud OCR, 2) Microsoft Cloud OCR, 3) Microsoft OCR, 4) Google OCR, and 5) Abbyy Cloud OCR.
+
+What are the contentions in UiPath?
+
+Contention in UiPath enables developers to make a contention for the project improvement.
+
+What is the session variable?
+
+The session variable in UiPath is a reference to one process of the instance. In case if the process continuous more than one process at the same time, it may have the same session variables but with changed value.
+
+Explain the types of robots that can be configured in Orchestrator?
+
+Two types of robots that can be configured in Orchestrator are:
+
+Standard robot: It is a machine which is dedicated on a single standard machine.
+Floating robot: It can use multiple machines like it can work on any standard or template.
+
+hat are reusable components in UiPath?
+
+Reusable components are defined as any workflow that is reused at different places in the UiPath project.
+
+What is Anchor base in UiPath?
+
+Anchor base is a container that searches for a UI element using other UI elements. This tool can be used when any reliable selector is not present.

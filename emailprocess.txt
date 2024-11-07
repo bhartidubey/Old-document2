@@ -1,0 +1,37 @@
+EMAIL AUTOMATION Server settings
+
+
+Server setting for imap, smtp and pop3
+
+SMTP
+For sending mails port is:
+
+587
+25
+
+For sending mails server examples is
+
+smtp.gmail.com
+smtp.yahoo.com
+smtp.google.com
+10.160.27.23
+
+IMAP
+ 
+port is:
+
+143
+993
+
+server examples is
+
+imap.gmail.com
+imap.yahoo.com
+imap.google.com
+
+POP3
+
+Port is:
+
+110
+993
